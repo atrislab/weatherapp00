@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gráfica de barras</title>
+	<style type="text/css">
+		.container {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+			justify-content: space-between;
+			width: 33%;
+			height: 200px;
+			background-color: #f2f2f2;
+			padding: 20px;
+			position: relative;
+		}
+
+		.bar {
+			width:10px;
+			margin-right: 3px;
+			background-color: #9d754b;
+		}
+
+		.e01 {
+			height: 40px;
+		}
+
+		.e02 {
+			height: 120px;
+		}
+
+		.e03 {
+			height: 52px;
+		}
+
+		.e04 {
+			height: 32px;
+		}
+
+		.e05 {
+			height: 12px;
+		}
+
+    .container::after {
+      content: "";
+      position: absolute;
+      bottom: 20px; /* Change this value to adjust the position of the line */
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid black;
+    }
+
+    .labels {
+        display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		justify-content: space-between;
+        align-items: center;
+		width: 33%;
+		height: 20px;
+		/*background-color: #f2f2f2;*/
+		padding: 20px;
+		position: relative;
+        font-size: 12px;
+        text-align:center;
+        margin-top:5px; /* Change this value to adjust the distance between the label and the bar */
+    
+    }
+
+    .label {
+    display: inline-block;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bar e01"></div>
+        <div class="bar e02"></div>
+        <div class="bar e03"></div>
+        <div class="bar e04"></div>
+        <div class="bar e05"></div>    
+    </div>
+
+    <div class="labels">
+        <div id="label e01">e01</div>
+        <div id="label e02">e02</div>
+        <div id="label e03">e03</div>
+        <div id="label e04">e04</div>
+        <div id="label e05">e05</div>
+    </div>
+
+</body>
+</html>
