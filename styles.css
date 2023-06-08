@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  align-items: center;
+    align-items: center;
     font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
     color: #9d754b;
     background: #dfba93;
@@ -11,19 +11,32 @@ body {
 
   header {
     height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   main {
     height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   footer {
+    margin-top: 20px;
     height: 20%;
     display: flex;
     justify-content: center;
-    position: fixed;
     bottom: 0;
   }
+
+  .xpln00 {
+    width: 77%;
+    text-align: center;
+    }
   
   .container {
     margin: 20px auto;
@@ -41,7 +54,7 @@ body {
     position: relative;
     overflow: hidden;
     height: 28px;
-    width: 150px;
+    width: 200px;
     background: #f2f2f2;
     border: 1px solid;
     border-color: white #f7f7f7 whitesmoke;
@@ -53,6 +66,7 @@ body {
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
   }
+  
   
   .dropdown:before, .dropdown:after {
     content: '';
@@ -112,32 +126,8 @@ body {
     border-radius: 3px;
     cursor: pointer;
   }
-  
-  /* Fix for IE 8 putting the arrows behind the select element. */
-  
-  .lt-ie9 .dropdown {
-    z-index: 1;
-  }
-  
-  .lt-ie9 .dropdown-select {
-    z-index: -1;
-  }
-  
-  .lt-ie9 .dropdown-select:focus {
-    z-index: 3;
-  }
-  
-  /* Dirty fix for Firefox adding padding where it shouldn't.
-  
-  @-moz-document url-prefix() {
-    .dropdown-select {
-      padding-left: 6px;
-    }
-  }
 
-  */
-
-  #logo {
+#logo {
     width: 72px;
     height: 72px;
     margin: auto;
@@ -147,34 +137,42 @@ body {
     background-position: center;
   }
 
-  #footermsg {
-    color:#9d754b;
-    font-size: smaller;
-    text-align: center;
-  }
-
 #contenido {
     background-color: #f2f2f2;
     border-radius: 5px;
     padding: 20px;
-    margin-top: 20px;
+    margin-bottom: 66px;
     border: 2px solid #9d754b;
   }
 
-  /*
-  .oculto {
-    display: none;
-  }
-  */
-  
   #contenido h2 {
     color:#9d754b;
     font-size: 24px;
     margin-bottom: 10px;
   }
-  
+
   #contenido p {
     color:#9d754b;
     font-size: 16px;
     margin-bottom: 5px;
+  }
+
+
+#top5 {
+    margin-top: 20px;
+}
+
+#top5Data {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #9d754b;
+  }
+
+  #footermsg {
+    color:#9d754b;
+    font-size: smaller;
+    text-align: center;
+    margin-top: 10px;
   }

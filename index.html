@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather app by atrislab</title>
+    <link rel="icon" type="image/svg" href="/assets/img/favicon.svg" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <header>
       <div id="logo"></div>
+      <article class="xpln00">
+        <p id="xpln00a">
+          WeatherApp recoge datos de clima de diferentes ciudades,
+          los muestra en el navegador y los guarda en Firestore. 
+        </p>
+      </article>
+    </header>
+    <main>
       <section class="container">
         <div class="dropdown">
           <select id="ciudades" name="one" class="dropdown-select">
-            <option value="">Selecciona una ciudad</option>
+            <option value="cleanDOM01">Selecciona una ciudad</option>
             <option value="Amsterdam">Amsterdam</option>
             <option value="Athens">Atenas</option>
             <option value="Barcelona">Barcelona</option>
@@ -32,15 +41,35 @@
             <option value="Vienna">Viena</option>
             <option value="Warsaw">Varsovia</option>
             <option value="Zaragoza">Zaragoza</option>
-
           </select>
         </div>
       </section>
-    </header>
-    <main>
-        
       <article id="contenido" class="oculto"></article>
-      
+
+      <article class="xpln00">
+        <p id="xpln00a">
+          De los datos almacenados podemos mostrarte listas curiosas,
+          un histórico de todas las consultas y, en un futuro, 
+          gráficas y estadísticas.
+        </p>
+      </article>
+
+    <section class="container">
+        <div class="dropdown">
+            <select id="mySelect" class="dropdown-select">
+                <option value="cleanDOM02">Qué quieres ver?</option>
+                <option value="top5htemp">Top5 Temps. Altas</option>
+                <option value="top5ltemp">Top5 Temps. Bajas</option>
+                <option value="top5hhumidity">Top5 Mayor Ind. Humedad</option>
+                <option value="top5lhumidity">Top5 Menor Ind. Humedad</option>
+                <option value="top5hwind">Top5 Mayor Vel. Viento</option>
+                <option value="top5lwind">Top5 Menor Vel. Viento</option>
+                <option value="allCollection">Toda la Colección</option>
+            </select>
+        </div>
+    </section>
+
+      <div id="top5Data"></div>
     </main>
     <footer>
       <p id="footermsg">
